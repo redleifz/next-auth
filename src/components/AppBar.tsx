@@ -4,7 +4,7 @@ import { signOut, useSession } from "next-auth/react";
 
 const AppBar = () => {
   const { data: session, status } = useSession();
-  // console.log(status);
+  // console.log(session);
 
   return (
     <>
