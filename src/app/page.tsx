@@ -7,10 +7,9 @@ const RootPage = () => {
   const fetchData = async () => {
     try {
       const { data } = await axios.get("/api/user");
-      // const { data } = await axiosInstance1.get("user"); // Use axiosInstance1 to make a GET request to the 'user' endpoint
+      console.log(data);
     } catch (error) {
       console.log(error);
-    } finally {
     }
   };
 
