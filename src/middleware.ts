@@ -6,7 +6,6 @@ import { NextResponse } from "next/server";
 export default withAuth(
     function middleware(request: NextRequestWithAuth) {
 
-        // console.log("token: ", request.nextauth.token);
 
         if (
             request.nextUrl.pathname.startsWith("/admin") &&
@@ -21,6 +20,8 @@ export default withAuth(
         ) {
             return NextResponse.redirect(new URL("/", request.url));
         }
+
+
 
     },
     {

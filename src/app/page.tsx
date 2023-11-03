@@ -15,15 +15,6 @@ const RootPage = () => {
   const fetchData = async () => {
     try {
       const {data} = await axiosService.get(`user/`)
-      // const {data} = await axiosAuth.get(`user/`)
-      // console.log("Fetching data");
-      // const { data } = await axiosService.get(`user/`);
-      // const { data } = await axios.get("http://localhost:8000/api/user/", {
-      //   headers: {
-      //     "Authorization": `Bearer ${session.data?.user.accessToken}`
-      //   }
-      // });
-      console.log("Data:", data);
     } catch (error) {
       console.log(error);
     }
